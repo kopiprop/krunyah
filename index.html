@@ -1225,7 +1225,7 @@
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: `email=${encodeURIComponent(emailInput)}&timestamp=${encodeURIComponent(new Date().toISOString())}`
       });
 
