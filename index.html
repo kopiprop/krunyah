@@ -1226,7 +1226,7 @@
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, timestamp: new Date().toISOString() })
+        body: JSON.stringify({ email: email-input, timestamp: new Date().toISOString() })
       });
 
       // no-cors mode: assume success if no error thrown
